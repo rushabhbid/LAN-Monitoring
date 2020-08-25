@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+
+	<title>LAN MONITORING | PC</title>
+		
+	<style>
+
+		@font-face { font-family: JSanL; src: url('fonts/JosefinSans-Light.ttf'); }
+		@font-face { font-family: JSanB; src: url('fonts/JosefinSans-Bold.ttf'); }
+		@font-face { font-family: JSanR; src: url('fonts/JosefinSans-Regular.ttf'); }
+
+	    body{
+	    	background-color:black;
+	    	font-family: 'JSanL';
+
+	    }
+		.nopadding {
+		   padding: 0 !important;
+		   margin: 0 !important;
+		}
+
+		button {
+		  border: none;
+		}
+
+		img{
+			width:40px;
+			height:40px;
+		}
+
+ 	    .bg-success{
+ 	    	background-color:#00ff44;
+ 	    }
+
+ 	    h2{
+ 	    	font-family: JSanR;
+ 	    	margin-bottom:0px;
+ 	    }
+
+ 	    h2.pl-4{
+ 	    	font-family: JSanB;
+ 	    	font-size: 40px;}
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-default bg-light navbar-light" height="40">
+<div class="container-fluid" >
+    <div class="navbar-header">
+      <h2 class="pl-4">LAN MONITORING</h2>
+    </div>
+    <div class="navbar-nav ml-auto px-3" > 
+    		<img data-toggle="modal" data-target="#myModal" alt="Broadcast Message" src="icon/msg2.png" id="icon" data-placement="bottom" title="Broadcast Message">
+    	 	<div class="modal p-5" id="myModal" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h3 class="modal-title">Broadcast Message</h3>
+				        
+				      </div>
+				      <div class="modal-body">
+				            <form>
+							    <div class="form-group">
+							      <textarea class="form-control" rows="5" id="b_msg"></textarea>
+							      <button type="button" class="btn btn-primary btn-block mt-2" data-dismiss="modal">Send Message</button>
+							    </div>
+						    </form>
+				      </div>
+
+				    </div>
+				  </div>
+	        </div>
+    </div>
+    <div class="navbar-nav navbar-right" > 
+    	<img data-toggle="modal" data-target="#PoweOff" alt="PoweOff" src="icon/off-all.png" id="icon" data-placement="bottom" title="Power Off All Machines">
+    	 </div>
+
+    	<div class="modal p-5" id="PoweOff" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				         <center></center> 
+						<h2 class="px-2 text-center"> Switch of all Machines?</h2>
+						<button type="submit" class="btn btn-danger mb-2 btn-block" data-dismiss="modal">YES</button>
+								
+				      </div>
+				    </div>
+				  </div>
+	    </div>            
+</div></nav>
+
+
+<!--- Main Body -->
+<div class="row m-5">
+
+<!--- CLIENT -->
+	<div class="col-6">
+		
+		<div class="card border-dark text-center bg-light">
+			  <div class="card-header ">
+			   	  <h2>Connected Client Machines</h2>
+			  </div>
+
+			  <div class="card-body nopadding h-100 scrollit">
+				  	<div style="overflow: auto; overflow-x: hidden; height: 466px;">
+					    <ul class="list-group list-group-flush">
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#00ff44">IP Address 1</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#ff1a1a">IP Address 2</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#00ff44">IP Address 3</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#ff1a1a">IP Address 4</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#ff1a1a">IP Address 5</button>
+						    <button type="button" class="list-group-item list-group-item-action bg-dark">IP Address 6</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#00ff44">IP Address 7</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#00ff44">IP Address 8</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#ff1a1a">IP Address 9</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#00ff44">IP Address 10</button>
+						    <button type="button" class="list-group-item list-group-item-action bg-dark">IP Address 11</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#00ff44">IP Address 12</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#00ff44">IP Address 13</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#ff1a1a">IP Address 14</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#00ff44">IP Address 15</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#00ff44">IP Address 16</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#00ff44">IP Address 17</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#ff1a1a">IP Address 18</button>
+						    <button type="button" class="list-group-item list-group-item-action " style="background:#00ff44">IP Address 19</button>
+						    <button type="button" class="list-group-item list-group-item-action bg-dark">IP Address 20</button>
+						</ul>
+					</div>
+			   </div>
+		</div>
+	</div>
+	
+<!--- PROCESS -->
+	<div class="col-6">
+		<div class="card border-dark text-center bg-light">
+			  <div class="card-header">
+			   	  <h2>Processes</h2>
+			  </div>
+
+			  <div class="card-body nopadding scrollit">
+				  	<div style="overflow: auto; overflow-x: hidden; height: 400px;">
+					    <ul class="list-group list-group-flush">
+						    <button type="button" class="list-group-item list-group-item-action ">Process 1</button>
+						    <button type="button" class="list-group-item list-group-item-action ">Process 2</button>
+						    <button type="button" class="list-group-item list-group-item-action ">Process 3</button>
+						    <button type="button" class="list-group-item list-group-item-action ">Process 4</button>
+						    <button type="button" class="list-group-item list-group-item-action ">Process 5</button>
+						</ul>
+					</div>
+			  </div>
+
+			  <div class="card-footer text-muted">
+				  	<div class="row">
+				  		<div class="col-4">
+					  		<img class="mx-3" data-toggle="tooltip" data-placement="bottom" title="Add Process" src="icon/plus.png">
+					    	<img class="mx-2" data-toggle="tooltip" data-placement="bottom" title="Delete Process" src="icon/minus.png">
+				    	</div>
+
+				    	<div class="col-2"></div>
+				    	<div class="col-6 ">
+					    	<img class="mx-3" data-toggle="modal" data-target="#msg1" src="icon/msg1.png" id="iconSmall" data-placement="bottom"
+									 title="Send Message to Client Machine" >
+							<img data-toggle="modal" data-target="#LiveSS" src="icon/live.png" id="iconSmall" data-placement="bottom" title="Get live Screenshot">
+			                <img class="ml-3" data-toggle="modal" data-target="#PoweOffOne" src="icon/power-off.png" id="iconSmall" data-placement="bottom" title="Switch Off Machine">
+					    </div>
+				    </div>    
+		      </div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<!--- Get live screenshot -->
+
+<div class="modal" id="LiveSS" tabindex="-1" role="dialog">
+				  <div class="modal-dialog modal-lg" role="document" ">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				         <img class="img-responsive" src="img/bg.png" style="width:100%;height: 100%">
+				      </div>
+				      <div class="modal-footer " style="background:#00ff44">
+
+				      		<div class="row px-3 pb-1">
+
+		      					<div class="col-2 float-left">IP ADDRESS</div>
+		      					<div class="col-3">
+									<img data-toggle="modal" data-target="#msg1" src="icon/msg1.png" id="iconSmall" data-placement="bottom"
+									 title="Send Message to Client Machine" >
+			                    </div>
+			                    <div class="col-3">
+									<img data-toggle="modal" data-target="#LiveSS" src="icon/live.png" id="iconSmall" data-placement="bottom" title="Get live Screenshot">
+			                    </div>
+			                    <div class="col-3">
+									<img data-toggle="modal" data-target="#PoweOffOne" src="icon/power-off.png" id="iconSmall" data-placement="bottom" title="Switch Off Machine">
+			                    </div>		    		    		    		    	
+		    				</div>
+
+				      </div>
+				    </div>
+				  </div>
+</div>
+
+<!--- Single Message -->
+<div class="p-5 modal" id="msg1" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      
+				      <div class="modal-body">
+				            <form>
+							    <div class="form-group">
+							      <textarea class="form-control" rows="5" id="b_msg"></textarea>
+							      <button type="button" class="btn btn-primary btn-block mt-2" data-dismiss="modal">Send Message</button>
+							    </div>
+						    </form>
+				      </div>
+				      
+				    </div>
+				  </div>
+</div>
+
+<!--- POwer off single machine -->
+<div class=" p-5 modal" id="PoweOffOne" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-body">
+							<h2 class="px-2 text-center"> Switch of Machine?</h2>
+							<button type="submit" class="btn btn-danger mb-2 btn-block" data-dismiss="modal">YES</button>
+					  </div>
+					  
+				    </div>
+				  </div>
+</div>
+
+
+
+
+<!--- SCRIPT -->
+
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+
+<!--- Footer -->
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

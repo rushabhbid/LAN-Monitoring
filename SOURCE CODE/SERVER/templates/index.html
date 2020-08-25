@@ -1,0 +1,1969 @@
+<!-- 1. define default "col" array of colors with some color 
+decrease font of ip-->
+{% extends "bootstrap/base.html" %}
+{% block content %}
+<html lang="en">
+<head>	<!--
+	<meta http-equiv="refresh" content="30">
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="-1" /> -->
+	<link rel="stylesheet" type="text/css" href="static/css/style_home.css">		
+	<title>LAN MONITORING | HOME</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	var timer1,timer2,timer3,timer4,timer5,timer6,timer7,timer8,timer9,timer10,timer11,timer12,timer13,timer14,timer15,timer16,timer17,timer18,timer19,timer20;
+	var seconds = 5; // how often should we refresh the DIV?
+	var i = 0.0;
+	function startActivityRefresh() {
+		
+		timer1 = setInterval(function() {
+			i=Math.random();
+			var s1 = "static/img/comp1/0.png?dummy="+i;
+			$("#image1").attr("src", s1);
+			$("#myImage1").attr("src", s1);
+		}, seconds*1000);
+		
+		timer2 = setInterval(function() {
+			var s2 = "static/img/comp2/0.png?dummy="+i;
+			$("#image2").attr("src", s2);
+			$("#myImage2").attr("src", s2);
+		}, seconds*1000);
+		
+		timer3 = setInterval(function() {
+			var s3 = "static/img/comp3/0.png?dummy="+i;
+			$("#image3").attr("src", s3);
+			$("#myImage3").attr("src", s3);
+		}, seconds*1000);
+		
+		timer4 = setInterval(function() {
+			var s4 = "static/img/comp4/0.png?dummy="+i;
+			$("#image4").attr("src", s4);
+			$("#myImage4").attr("src", s4);
+		}, seconds*1000);
+		
+		timer5 = setInterval(function() {
+			var s5 = "static/img/comp5/0.png?dummy="+i;
+			$("#image5").attr("src", s5);
+			$("#myImage5").attr("src", s5);
+		}, seconds*1000);
+		
+		timer6 = setInterval(function() {
+			var s6 = "static/img/comp6/0.png?dummy="+i;
+			$("#image6").attr("src", s6);
+			$("#myImage6").attr("src", s6);
+		}, seconds*1000);
+		
+		timer7 = setInterval(function() {
+			var s7 = "static/img/comp7/0.png?dummy="+i;
+			$("#image7").attr("src", s7);
+			$("#myImage7").attr("src", s7);
+		}, seconds*1000);
+		
+		timer8 = setInterval(function() {
+			var s8 = "static/img/comp8/0.png?dummy="+i;
+			$("#image8").attr("src", s8);
+			$("#myImage8").attr("src", s8);
+		}, seconds*1000);
+		
+		timer9 = setInterval(function() {
+			var s9 = "static/img/comp9/0.png?dummy="+i;
+			$("#image9").attr("src", s9);
+			$("#myImage9").attr("src", s9);
+		}, seconds*1000);
+		
+		timer10 = setInterval(function() {
+			var s10 = "static/img/comp10/0.png?dummy="+i;
+			$("#image10").attr("src", s10);
+			$("#myImage10").attr("src", s10);
+		}, seconds*1000);
+		
+		timer11 = setInterval(function() {
+			var s11 = "static/img/comp11/0.png?dummy="+i;
+			$("#image11").attr("src", s11);
+			$("#myImage11").attr("src", s11);
+		}, seconds*1000);
+		
+		timer12 = setInterval(function() {
+			var s12 = "static/img/comp12/0.png?dummy="+i;
+			$("#image12").attr("src", s12);
+			$("#myImage12").attr("src", s12);
+		}, seconds*1000);
+		
+		timer13 = setInterval(function() {
+			var s13 = "static/img/comp13/0.png?dummy="+i;
+			$("#image13").attr("src", s13);
+			$("#myImage13").attr("src", s13);
+		}, seconds*1000);
+		
+		timer14 = setInterval(function() {
+			var s14 = "static/img/comp14/0.png?dummy="+i;
+			$("#image14").attr("src", s14);
+			$("#myImage14").attr("src", s14);
+		}, seconds*1000);
+		
+		timer15 = setInterval(function() {
+			var s15 = "static/img/comp15/0.png?dummy="+i;
+			$("#image15").attr("src", s15);
+			$("#myImage15").attr("src", s15);
+		}, seconds*1000);
+		
+		timer16 = setInterval(function() {
+			var s16 = "static/img/comp16/0.png?dummy="+i;
+			$("#image16").attr("src", s16);
+			$("#myImage16").attr("src", s16);
+		}, seconds*1000);
+		
+		timer17 = setInterval(function() {
+			var s17 = "static/img/comp17/0.png?dummy="+i;
+			$("#image17").attr("src", s17);
+			$("#myImage17").attr("src", s17);
+		}, seconds*1000);
+		
+		timer18 = setInterval(function() {
+			var s18 = "static/img/comp18/0.png?dummy="+i;
+			$("#image18").attr("src", s18);
+			$("#myImage18").attr("src", s18);
+		}, seconds*1000);
+		
+		timer19 = setInterval(function() {
+			var s19 = "static/img/comp19/0.png?dummy="+i;
+			$("#image19").attr("src", s19);
+			$("#myImage19").attr("src", s19);
+		}, seconds*1000);
+		
+		timer20 = setInterval(function() {
+			var s20 = "static/img/comp20/0.png?dummy="+i;
+			$("#image20").attr("src", s20);
+			$("#myImage20").attr("src", s20);
+			i++;
+		}, seconds*1000);
+	}
+	
+	function cancelActivityRefresh() {
+		clearInterval(timer1);
+		clearInterval(timer2);
+		clearInterval(timer3);
+		clearInterval(timer4);
+		clearInterval(timer5);
+		clearInterval(timer6);
+		clearInterval(timer7);
+		clearInterval(timer8);
+		clearInterval(timer9);
+		clearInterval(timer10);
+		clearInterval(timer11);
+		clearInterval(timer12);
+		clearInterval(timer13);
+		clearInterval(timer14);
+		clearInterval(timer15);
+		clearInterval(timer16);
+		clearInterval(timer17);
+		clearInterval(timer18);
+		clearInterval(timer19);
+		clearInterval(timer20);
+	}
+	$(function() {
+		startActivityRefresh();
+	});
+	</script>
+	<style>	
+	@font-face {
+		font-family: JSanL;
+		src: url('static/fonts/JosefinSans-Light.ttf');
+	}
+
+	@font-face {
+		font-family: JSanB;
+		src: url('static/fonts/JosefinSans-Bold.ttf');
+	}
+
+	@font-face {
+		font-family: JSanR;
+		src: url('static/fonts/JosefinSans-Regular.ttf');
+	}
+
+	.card {
+		width: 19.5%;
+		height: 25%;
+		display: inline-block;
+		border-radius: 5px;
+		margin: 2px;
+		border-style: solid;
+		border-color: white;
+	}
+
+	.image img {
+		width: 100%;
+		height: 169px;
+	}
+
+	p {
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.navbar-nav {
+		padding: 10px;
+		padding-right: 15px;
+	}
+
+	#icon {
+		margin-right: 1.5vw;
+		width: 3vw;
+		height: auto;
+	}
+
+	#icondis {
+		margin-right: 1.5vw;
+		width: 3vw;
+		height: auto;
+	}
+	
+	#iconK {
+		margin-right: 1.5vw;
+		height: 5.8vh;
+	}
+
+	#ip {
+		font-size: 20px;
+	}
+	.divLeft {
+		width: 300px;
+		display: block;
+		float: left;
+	}
+
+	.divRight {
+		width: 340px;
+		display: block;
+		float: right;
+	}
+
+	.modal-body {
+		vertical-align: middle;
+		padding: 2px;
+		margin: 0px;
+	}
+
+	.modal {
+		vertical-align: middle;
+	}
+	
+	#myImage {
+		min-height:200px;
+	}
+	
+	</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default bg-light navbar-light">
+<div class="container-fluid" >
+    <div class="navbar-header">
+      <h2 class="pl-4">LAN MONITORING</h2>
+    </div>
+	
+	<div class="navbar-nav navbar-right" > 
+    	<img data-toggle="modal" data-target="#PoweOff" alt="PoweOff" src="static/icon/off-all.png" id="icon" data-placement="bottom" title="Power Off All Machines">
+   	 </div>
+    	<div class="modal p-5" id="PoweOff" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				         <center></center> 
+						<h2 class="px-2 text-center"> Switch off all Machines?</h2> 
+						<form action="/offall"><!--- Submit button calls python method switchoff() in pyt.py -->
+							<button type="submit" class="btn btn-danger mb-2 btn-block" >YES</button>
+						</form>		
+				      </div>
+				    </div>
+				  </div>
+	    </div>
+	
+    <div class="navbar-nav navbar-right" > 
+    	 	<img data-toggle="modal" data-target="#myModal" alt="Broadcast Message" src="static/icon/msg2.png" id="icon" data-placement="bottom" title="Broadcast Message">
+    	 	<div class="modal p-5" id="myModal" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+							<h3 class="modal-title">Broadcast Message</h3>
+				      </div>
+				      <div class="modal-body">
+				            <form action="/broadcast" method="post"> <!-- Gets message(value of name-b_msg), saves in'msg' -->
+							    <div class="form-group">
+							      <textarea class="form-control" rows="5" name="b_msg"></textarea>
+								  <button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+							    </div>
+						    </form>
+				      </div>
+				    </div>
+				  </div>
+	        </div>
+    </div>
+    
+
+	<div class="navbar-nav navbar-right" > 
+    	 	<img data-toggle="modal" data-target="#Key" alt="Select Keywords" src="static/icon/keyW.png" id="iconK" data-placement="bottom" title="Select Keywords">
+    	 	<div class="modal p-5" id="Key" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+							<h3 class="modal-title">Select Keywords</h3>
+				      </div>
+				      <div class="modal-body">
+				            <form action="/keyword" method="post"> <!-- Gets keywords(value of name-key_words), saves in'?' -->
+							    <div class="form-group">
+							      <textarea class="form-control" rows="5" name="key_words"></textarea>
+								  <button type="submit" class="btn btn-primary btn-block mt-2" >CONFIRM</button>
+							    </div>
+						    </form>
+				      </div>
+				    </div>
+				  </div>
+	        </div>
+    </div>
+</div></nav>
+
+<!--- 20 PCs 4X5 -->   <!--- onclick="getIP(python array variable)" -->
+<!--- row 1 -->
+
+<div id="1" class="card" style="background-color: {{col[0]}}">
+	<!--- Display IMAGE of MACHINE 1-->
+	<div class="image"> 
+		<img id="image1" alt="Computer1" data-toggle="modal" data-target="#LiveSS_1" src="static/img/comp1/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 1-->
+	<div class="modal " id="LiveSS_1" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage1" alt="Computer1" src="static/img/comp1/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[0]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[0]}}" />
+											<input type="image" alt="LiveComp2" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[0]}}" />
+											  {% if isStudent[0] == True %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer1" data-toggle="modal" data-target="#msg1_1" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp1" data-toggle="modal" data-target="#PowerOffOne_1" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+	</div>
+	<!--- Power off single machine 1-->
+	<div class="modal p-5" id="PowerOffOne_1" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[0]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 1-->
+	<div class="modal p-5" id="msg1_1" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[0]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="2" class="card" style="background-color: {{col[1]}}">
+	<!--- Display IMAGE of MACHINE 2-->
+	<div class="image"> 
+		<img id="image2" alt="Computer2" data-toggle="modal" data-target="#LiveSS_2" src="static/img/comp2/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 2-->
+	<div class="modal " id="LiveSS_2" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage2" alt="Computer2" src="static/img/comp2/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[1]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[1]}}" />
+											<input type="image" alt="LiveComp2" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[1]}}" />
+											  {% if isStudent[1]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer2" data-toggle="modal" data-target="#msg1_2" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp2" data-toggle="modal" data-target="#PowerOffOne_2" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+	</div>
+	<!--- Power off single machine 2-->
+	<div class="modal p-5" id="PowerOffOne_2" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[1]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 2-->
+	<div class="modal p-5" id="msg1_2" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[1]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="3" class="card" style="background-color: {{col[2]}}">
+	<!--- Display IMAGE of MACHINE 3-->
+	<div class="image"> 
+		<img id="image3" alt="Computer3" data-toggle="modal" data-target="#LiveSS_3" src="static/img/comp3/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 3-->
+	<div class="modal " id="LiveSS_3" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage3" alt="Computer3" src="static/img/comp3.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[2]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[2]}}" />
+											<input type="image" alt="LiveComp3" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[2]}}" />
+											  {% if isStudent[2]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer3" data-toggle="modal" data-target="#msg1_3" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp3" data-toggle="modal" data-target="#PowerOffOne_3" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 3-->
+	<div class="modal p-5" id="PowerOffOne_3" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[2]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 3-->
+	<div class="modal p-5" id="msg1_3" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[2]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="4" class="card" style="background-color: {{col[3]}}">
+	<!--- Display IMAGE of MACHINE 4-->
+	<div class="image"> 
+		<img id="image4" alt="Computer4" data-toggle="modal" data-target="#LiveSS_4" src="static/img/comp4/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 4-->
+	<div class="modal " id="LiveSS_4" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage4" alt="Computer4" src="static/img/comp4/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[3]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[3]}}" />
+											<input type="image" alt="LiveComp4" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[3]}}" />
+											  {% if isStudent[3]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer4" data-toggle="modal" data-target="#msg1_4" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp4" data-toggle="modal" data-target="#PowerOffOne_4" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 4-->
+	<div class="modal p-5" id="PowerOffOne_4" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[3]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 4-->
+	<div class="modal p-5" id="msg1_4" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[3]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="5" class="card" style="background-color: {{col[4]}}">
+	<!--- Display IMAGE of MACHINE 5-->
+	<div class="image"> 
+		<img id="image5" alt="Computer5" data-toggle="modal" data-target="#LiveSS_5" src="static/img/comp5/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 5-->
+	<div class="modal " id="LiveSS_5" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage5" alt="Computer5" src="static/img/comp5/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[4]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[4]}}" />
+											<input type="image" alt="LiveComp5" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[4]}}" />
+											  {% if isStudent[4]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer5" data-toggle="modal" data-target="#msg1_5" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp5" data-toggle="modal" data-target="#PowerOffOne_5" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 5-->
+	<div class="modal p-5" id="PowerOffOne_5" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[4]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 5-->
+	<div class="modal p-5" id="msg1_5" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[4]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+
+<!--- row 2 -->
+<div id="6" class="card" style="background-color: {{col[5]}}">
+	<!--- Display IMAGE of MACHINE 6-->
+	<div class="image"> 
+		<img id="image6" alt="Computer6" data-toggle="modal" data-target="#LiveSS_6" src="static/img/comp6/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 6-->
+	<div class="modal " id="LiveSS_6" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage6" alt="Computer6" src="static/img/comp6/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[5]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[5]}}" />
+											<input type="image" alt="LiveComp6" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[5]}}" />
+											  {% if isStudent[5]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer6" data-toggle="modal" data-target="#msg1_6" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										
+<img alt="PowerOffComp6" data-toggle="modal" data-target="#PowerOffOne_6" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 6-->
+	<div class="modal p-5" id="PowerOffOne_6" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[5]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 6-->
+	<div class="modal p-5" id="msg1_6" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[5]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="7" class="card" style="background-color: {{col[6]}}">
+	<!--- Display IMAGE of MACHINE 7-->
+	<div class="image"> 
+		<img id="image7" alt="Computer7" data-toggle="modal" data-target="#LiveSS_7" src="static/img/comp7/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 7-->
+	<div class="modal " id="LiveSS_7" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage7" alt="Computer7" src="static/img/comp7/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[6]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[6]}}" />
+											<input type="image" alt="LiveComp7" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[6]}}" />
+											  {% if isStudent[6]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer7" data-toggle="modal" data-target="#msg1_7" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp7" data-toggle="modal" data-target="#PowerOffOne_7" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+	</div>
+	<!--- Power off single machine 7-->
+	<div class="modal p-5" id="PowerOffOne_7" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[6]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 7-->
+	<div class="modal p-5" id="msg1_7" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[6]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="8" class="card" style="background-color: {{col[7]}}">
+	<!--- Display IMAGE of MACHINE 8-->
+	<div class="image"> 
+		<img id="image8" alt="Computer8" data-toggle="modal" data-target="#LiveSS_8" src="static/img/comp8/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 8-->
+	<div class="modal " id="LiveSS_8" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage8" alt="Computer8" src="static/img/comp8/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[7]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[7]}}" />
+											<input type="image" alt="LiveComp8" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[7]}}" />
+											  {% if isStudent[7]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer8" data-toggle="modal" data-target="#msg1_8" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp8" data-toggle="modal" data-target="#PowerOffOne_8" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 8-->
+	<div class="modal p-5" id="PowerOffOne_8" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[7]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 8-->
+	<div class="modal p-5" id="msg1_8" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[7]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="9" class="card" style="background-color: {{col[8]}}">
+	<!--- Display IMAGE of MACHINE 9-->
+	<div class="image"> 
+		<img id="image9" alt="Computer9" data-toggle="modal" data-target="#LiveSS_9" src="static/img/comp9/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 9-->
+	<div class="modal " id="LiveSS_9" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage9" alt="Computer9" src="static/img/comp9/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[8]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[8]}}" />
+											<input type="image" alt="LiveComp9" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[8]}}" />
+											  {% if isStudent[8]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer9" data-toggle="modal" data-target="#msg1_9" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp9" data-toggle="modal" data-target="#PowerOffOne_9" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 9-->
+	<div class="modal p-5" id="PowerOffOne_9" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[8]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 9-->
+	<div class="modal p-5" id="msg1_9" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[8]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="10" class="card" style="background-color: {{col[9]}}">
+	<!--- Display IMAGE of MACHINE 10-->
+	<div class="image"> 
+		<img id="image10" alt="Computer10" data-toggle="modal" data-target="#LiveSS_10" src="static/img/comp10/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 10-->
+	<div class="modal " id="LiveSS_10" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage10" alt="Computer10" src="static/img/comp10/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[9]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[9]}}" />
+											<input type="image" alt="LiveComp10" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[9]}}" />
+											  {% if isStudent[9]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer10" data-toggle="modal" data-target="#msg1_10" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp10" data-toggle="modal" data-target="#PowerOffOne_10" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 10-->
+	<div class="modal p-5" id="PowerOffOne_10" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[9]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 10-->
+	<div class="modal p-5" id="msg1_10" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[9]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+
+<!--- row 3 -->
+
+<div id="11" class="card" style="background-color: {{col[10]}}">
+	<!--- Display IMAGE of MACHINE 11-->
+	<div class="image"> 
+		<img id="image11" alt="Computer11" data-toggle="modal" data-target="#LiveSS_11" src="static/img/comp11/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 11-->
+	<div class="modal " id="LiveSS_11" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage11" alt="Computer11" src="static/img/comp11/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[10]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[10]}}" />
+											<input type="image" alt="LiveComp11" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[10]}}" />
+											  {% if isStudent[10]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer11" data-toggle="modal" data-target="#msg11_1" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp11" data-toggle="modal" data-target="#PowerOffOne_11" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 11-->
+	<div class="modal p-5" id="PowerOffOne_11" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[10]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 11-->
+	<div class="modal p-5" id="msg11_1" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[10]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="12" class="card" style="background-color: {{col[11]}}">
+	<!--- Display IMAGE of MACHINE 12-->
+	<div class="image"> 
+		<img id="image12" alt="Computer12" data-toggle="modal" data-target="#LiveSS_12" src="static/img/comp12/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 12-->
+	<div class="modal " id="LiveSS_12" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage12" alt="Computer12" src="static/img/comp12/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[11]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[11]}}" />
+											<input type="image" alt="LiveComp12" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[11]}}" />
+											  {% if isStudent[11]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer12" data-toggle="modal" data-target="#msg1_12" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp12" data-toggle="modal" data-target="#PowerOffOne_12" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+	</div>
+	<!--- Power off single machine 12-->
+	<div class="modal p-5" id="PowerOffOne_12" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[11]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 12-->
+	<div class="modal p-5" id="msg1_12" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[11]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="13" class="card" style="background-color: {{col[12]}}">
+	<!--- Display IMAGE of MACHINE 13-->
+	<div class="image"> 
+		<img id="image13" alt="Computer13" data-toggle="modal" data-target="#LiveSS_13" src="static/img/comp13/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 13-->
+	<div class="modal " id="LiveSS_13" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage13" alt="Computer13" src="static/img/comp13/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[12]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[12]}}" />
+											<input type="image" alt="LiveComp13" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[12]}}" />
+											  {% if isStudent[12]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer13" data-toggle="modal" data-target="#msg1_13" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp13" data-toggle="modal" data-target="#PowerOffOne_13" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 13-->
+	<div class="modal p-5" id="PowerOffOne_13" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[12]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 13-->
+	<div class="modal p-5" id="msg1_13" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[12]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="14" class="card" style="background-color: {{col[13]}}">
+	<!--- Display IMAGE of MACHINE 14-->
+	<div class="image"> 
+		<img id="image14" alt="Computer14" data-toggle="modal" data-target="#LiveSS_14" src="static/img/comp14/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 14-->
+	<div class="modal " id="LiveSS_14" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage14" alt="Computer14" src="static/img/comp14/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[13]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[13]}}" />
+											<input type="image" alt="LiveComp14" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[13]}}" />
+											  {% if isStudent[13]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer14" data-toggle="modal" data-target="#msg1_14" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp14" data-toggle="modal" data-target="#PowerOffOne_14" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 14-->
+	<div class="modal p-5" id="PowerOffOne_14" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[13]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 14-->
+	<div class="modal p-5" id="msg1_14" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[13]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="15" class="card" style="background-color: {{col[14]}}">
+	<!--- Display IMAGE of MACHINE 15-->
+	<div class="image"> 
+		<img id="image15" alt="Computer15" data-toggle="modal" data-target="#LiveSS_15" src="static/img/comp15/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 15-->
+	<div class="modal " id="LiveSS_15" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage15" alt="Computer15" src="static/img/comp15/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[14]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[14]}}" />
+											<input type="image" alt="LiveComp15" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[14]}}" />
+											  {% if isStudent[14]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer15" data-toggle="modal" data-target="#msg1_15" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp15" data-toggle="modal" data-target="#PowerOffOne_15" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 15-->
+	<div class="modal p-5" id="PowerOffOne_15" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[14]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 15-->
+	<div class="modal p-5" id="msg1_15" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[14]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+
+<!--- row 4 -->
+
+<div id="16" class="card" style="background-color: {{col[15]}}">
+	<!--- Display IMAGE of MACHINE 16-->
+	<div class="image"> 
+		<img id="image16" alt="Computer16" data-toggle="modal" data-target="#LiveSS_16" src="static/img/comp16/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 16-->
+	<div class="modal " id="LiveSS_16" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage16" alt="Computer16" src="static/img/comp16/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[15]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[15]}}" />
+											<input type="image" alt="LiveComp16" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[15]}}" />
+											  {% if isStudent[15]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer16" data-toggle="modal" data-target="#msg1_16" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp16" data-toggle="modal" data-target="#PowerOffOne_16" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 16-->
+	<div class="modal p-5" id="PowerOffOne_16" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[15]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 16-->
+	<div class="modal p-5" id="msg16_1" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[15]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="17" class="card" style="background-color: {{col[16]}}">
+	<!--- Display IMAGE of MACHINE 17-->
+	<div class="image"> 
+		<img id="image17" alt="Computer17" data-toggle="modal" data-target="#LiveSS_17" src="static/img/comp17/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 17-->
+	<div class="modal " id="LiveSS_17" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage17" alt="Computer17" src="static/img/comp17/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[16]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[16]}}" />
+											<input type="image" alt="LiveComp17" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[16]}}" />
+											  {% if isStudent[16]==True %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer17" data-toggle="modal" data-target="#msg1_17" src="static/icon/msg1.png" id="icon"><!-- Send message -->
+										<img alt="PowerOffComp17" data-toggle="modal" data-target="#PowerOffOne_17" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+	</div>
+	<!--- Power off single machine 17-->
+	<div class="modal p-5" id="PowerOffOne_17" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[16]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 17-->
+	<div class="modal p-5" id="msg1_17" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[16]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="18" class="card" style="background-color: {{col[17]}}">
+	<!--- Display IMAGE of MACHINE 18-->
+	<div class="image"> 
+		<img id="image18" alt="Computer18" data-toggle="modal" data-target="#LiveSS_18" src="static/img/comp18/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 18-->
+	<div class="modal " id="LiveSS_18" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage18" alt="Computer18" src="static/img/comp18/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[17]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[17]}}" />
+											<input type="image" alt="LiveComp18" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[17]}}" />
+											  {% if isStudent[17]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer18" data-toggle="modal" data-target="#msg1_18" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp18" data-toggle="modal" data-target="#PowerOffOne_18" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 18-->
+	<div class="modal p-5" id="PowerOffOne_18" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[17]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 18-->
+	<div class="modal p-5" id="msg1_18" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[17]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="19" class="card" style="background-color: {{col[18]}}">
+	<!--- Display IMAGE of MACHINE 19-->
+	<div class="image"> 
+		<img id="image19" alt="Computer19" data-toggle="modal" data-target="#LiveSS_19" src="static/img/comp19/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 19-->
+	<div class="modal " id="LiveSS_19" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage19" alt="Computer19" src="static/img/comp19/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[18]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[18]}}" />
+											<input type="image" alt="LiveComp19" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[18]}}" />
+											  {% if isStudent[18]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer19" data-toggle="modal" data-target="#msg1_19" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp19" data-toggle="modal" data-target="#PowerOffOne_19" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 19-->
+	<div class="modal p-5" id="PowerOffOne_19" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[18]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 19-->
+	<div class="modal p-5" id="msg1_19" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[18]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+<div id="20" class="card" style="background-color: {{col[19]}}">
+	<!--- Display IMAGE of MACHINE 20-->
+	<div class="image"> 
+		<img id="image20" alt="Computer20" data-toggle="modal" data-target="#LiveSS_20" src="static/img/comp20/0.png">
+	</div>
+
+	<!--- Get live screenshot MACHINE 20-->
+	<div class="modal " id="LiveSS_20" tabindex="-1" role="dialog">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+							 <img id="myImage20" alt="Computer20" src="static/img/comp20/0.png" style="width:100%;">
+								
+							 <div class="modal-footer bg-success">
+									<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p id="ip" style="float: right;">{{adds[19]}}</p>
+										</div>
+										<!--empty tag where the IP address value will be written -->
+									</span> <!-- Get IP(msg) from the array of python file manually -->           
+									<span class="divRight">
+										<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+											<input type="hidden" name="submit" value="{{adds[19]}}" />
+											<input type="image" alt="LiveComp20" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+										</form>
+										<!-- Disconnect Single Machine -->
+                                        <form style="float: left; width: 10%;" action="/disconnect" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+                                            <input type="hidden" name="submit" value="{{adds[19]}}" />
+											  {% if isStudent[19]==1 %}
+											  <input type="image" alt="DisconnectComp1" src="static/icon/cancel.png" id="icondis"/ ><!-- Updates the image -->
+											  {% else %}
+											  <input type="image" alt="ConnectComp1" src="static/icon/plus.png" id="icondis"/ ><!-- Updates the image -->
+											  {% endif %}                                        </form>
+										<img alt="MessageComputer20" data-toggle="modal" data-target="#msg1_20" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+										<img alt="PowerOffComp20" data-toggle="modal" data-target="#PowerOffOne_20" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+									</span>
+							 </div>
+						 
+							
+						</div>
+					  </div>
+					</div>
+	<!--- Power off single machine 20-->
+	<div class="modal p-5" id="PowerOffOne_20" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-body">
+								<h2 class="px-2 text-center"> Switch off Machine?</h2>
+								<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+									<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{adds[19]}}">YES</button>
+								</form>
+						  </div>
+						 
+						</div>
+					  </div>
+	</div>
+	<!--- Single Message MACHINE 20-->
+	<div class="modal p-5" id="msg1_20" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						 
+						   <div class="modal-body">
+								<form action="/message1" method="post">
+									<div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+										<input id="send_msg" type="hidden" name="get_ip" value="{{adds[19]}}" />
+										<textarea class="form-control" rows="5" name="message"></textarea>
+										<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+									</div>
+								</form>
+						   </div>
+						 
+						</div>
+					  </div>
+	</div>
+	</div>	
+</div>
+
+
+
+
+
+<!--- Get live screenshot -->
+<div class="modal " id="LiveSS" tabindex="-1" role="dialog">
+				  <div class="modal-dialog modal-lg" role="document" ">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				         <img id="myImage" alt="Computer" src="static/img/bg.png" style="width:100%;">
+						 
+						 <div class="modal-footer bg-success">
+								<span class="divLeft">
+										<div style="overflow: hidden;">
+										<p id="ip" style="float: left;" >IP ADDRESS: </p>
+										<p style="float: right;" id="ip_address"></p>
+										</div><!--empty tag where the IP address value will be written -->
+								</span> <!-- Get IP(msg) from the array of python file manually -->			
+								<span class="divRight">
+									<form style="float: left; width: 35%;" action="/live" method="post" > <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+										<input type="hidden" name="live_ss_ip" value="beeoi" />
+										<input type="image" alt="LiveComp1" src="static/icon/live.png" id="icon"/><!-- Updates the image -->
+									</form>
+									<img alt="MessageComputer" data-toggle="modal" data-target="#msg1" src="static/icon/msg1.png" id="icon"> <!-- Send message -->
+									<img alt="PowerOffComp" data-toggle="modal" data-target="#PowerOffOne" src="static/icon/power-off.png" id="icon"> <!-- Power off Single Machine -->
+								</span>
+						 </div>
+				      
+			             
+				    </div>
+				  </div>
+</div>
+<!--- Power off single machine -->
+<div class="modal p-5" id="PowerOffOne" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-body">
+							<h2 class="px-2 text-center"> Switch off Machine?</h2>
+							<form action="/off1" method="post"> <!-- Gets IP address(value of name-submit) & saves in 'ipA' -->
+								<button id="switch_off1" type="submit" class="btn btn-danger mb-2 btn-block"  name="submit" value="{{var[10]}}">YES</button>
+							</form>
+					  </div>
+					  
+				    </div>
+				  </div>
+</div>
+<!--- Single Message -->
+<div class="modal p-5" id="msg1" tabindex="-1" role="dialog">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      
+				       <div class="modal-body">
+				            <form action="/message1" method="post">
+							    <div class="form-group"> <!-- Gets the IP address(value of name-comment_ip) and message(value of name-message), saves in 'IPa'&'msg' -->
+									<input id="send_msg" type="hidden" name="get_ip" value="ipaddress" />
+									<textarea class="form-control" rows="5" name="message"></textarea>
+									<button type="submit" class="btn btn-primary btn-block mt-2" >Send Message</button>
+								</div>
+						    </form>
+				       </div>
+				      
+				    </div>
+				  </div>
+</div>
+
+</body>
+
+
+
+{% endblock %}

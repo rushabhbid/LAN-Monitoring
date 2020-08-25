@@ -1,0 +1,40 @@
+@font-face { font-family: PoiretOne; src: url('css/fonts/PoiretOne-Regular.ttf'); }
+		@font-face { font-family: ChangaL; src: url('css/fonts/Changa-Light.ttf'); }
+		@font-face { font-family: ChangaB; src: url('css/fonts/Changa-SemiBold.ttf'); }
+
+
+
+	    body{
+	    	background-color:black;
+	    	font-family: 'PoiretOne';
+
+	    }
+		#dabba{
+			background-color:#00ff44;
+			color:orange;
+			
+		}
+		 {
+			  border-radius: 0 !important;
+			}
+
+		#ip{padding-left: 2px; font-size: 15px;}
+
+		#iconSmall{
+			width:20px;
+			height:20px;
+		}
+		#icon{
+			width:40px;
+			height:40px;
+		}
+
+		.navbar {
+		  min-height: 30px;
+		}
+		.navbar-brand {
+		  padding: 0 15px;
+		  height: 30px;
+		  line-height: 30px;
+		}
+ 
